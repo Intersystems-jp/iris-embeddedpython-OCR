@@ -1,6 +1,7 @@
 # Embedded Python を使ってお買い物したレシートの内容をIRISに登録してみよう！
 
-このサンプルでは、Google の [Vision API](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwif8e-V1Zr2AhUPPmAKHdP3CzUYABABGgJ0bQ&ohost=www.google.com&cid=CAESWuD2gmGsRjgHIG7U71M1k1rctWYaB2KNn0LydOekcICKtpptW82vzNRVALKqT08dMmUBmQ_vofF_-t8dGCDfnYt6n-cr4OBBQx2BwGzuBCBQwzTo9FdQEthiLQ&sig=AOD64_0fAWgO8HeN47Wyzd0-cCqGNNhevg&q&adurl&ved=2ahUKEwie_eeV1Zr2AhWQk1YBHS0DBPMQ0Qx6BAgCEAE) を利用してレシートのJPG画像から購入物品をテキストで抽出し、Embedded Python を使用してIRISにデータを登録する流れを確認できます。
+このサンプルはインターシステムズ開発者コミュニティの[記事](https://jp.community.intersystems.com/node/513136)のサンプルで、Google の [Vision API](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwif8e-V1Zr2AhUPPmAKHdP3CzUYABABGgJ0bQ&ohost=www.google.com&cid=CAESWuD2gmGsRjgHIG7U71M1k1rctWYaB2KNn0LydOekcICKtpptW82vzNRVALKqT08dMmUBmQ_vofF_-t8dGCDfnYt6n-cr4OBBQx2BwGzuBCBQwzTo9FdQEthiLQ&sig=AOD64_0fAWgO8HeN47Wyzd0-cCqGNNhevg&q&adurl&ved=2ahUKEwie_eeV1Zr2AhWQk1YBHS0DBPMQ0Qx6BAgCEAE) を利用してレシートのJPG画像から購入物品をテキストで抽出し、Embedded Python を使用してIRISにデータを登録する流れを確認できます。
+
 
 **参考にしたページ：[【Google Colab】Vision APIで『レシートOCR』](https://qiita.com/shoku-pan/items/bf5645894803769edc72)**
 
@@ -61,7 +62,7 @@ json_path="/okaimono_python/ocrproject-00001-abshak102qq1.json"
     docker-compose up -d --build
     ```
         
-    - ビルド後は、以下の方法で開始
+    - ビルド済でコンテナを破棄した後は以下の方法で開始
         
         ```
         docker-compose up -d
