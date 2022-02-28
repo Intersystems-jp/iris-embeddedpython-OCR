@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  irisembeddedpython:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: iris:embeddedpython
+    ports: ["51775:1972","52775:52773"]
+    container_name: embeddedpython
+    volumes: ["./okaimono_python:/okaimono_python"]
+    environment: 
+      - TZ=JST-9
